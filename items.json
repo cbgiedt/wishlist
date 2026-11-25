@@ -216,6 +216,23 @@
       "photo": "photos/image.png"
     },
     {
+      "name": "Automatic watch (Seiko, Orient or similar)",
+      "category": "Style",
+      "price": "Ideally under $150, up to $250",
+      "sort": 150,
+      "buy": [
+        {
+          "label": "Amazon (example: Seiko 5 SNXS77)",
+          "url": "https://www.amazon.com/dp/B000KKO85S"
+        }
+      ],
+      "used": {
+        "text": "Used is fine"
+      },
+      "notes": "Minimal and stainless steel. Black dial (blue is OK) with the day or date. Steel bracelet, leather is OK. Not digital, not solar. Other good fits: Orient Tristar, Seiko 5 SNK809.",
+      "photo": "https://m.media-amazon.com/images/I/51u+3YfRwtL._AC_SL1080_.jpg"
+    },
+    {
       "name": "Kicker 6x9 front door speaker kit",
       "category": "Truck",
       "price": "$119.99",
@@ -235,7 +252,7 @@
     {
       "name": "Ditch light kit for 2016–2023 Tacoma",
       "category": "Truck",
-      "price": "$161.49",
+      "price": "$161.49+",
       "sort": 161.49,
       "buy": [
         {
@@ -246,7 +263,7 @@
       "used": {
         "text": "Used is fine"
       },
-      "notes": "Get the version with 2 LED pods and the wiring harness. Spot-beam pods work too.",
+      "notes": "Pick the options with 2 LED pods, the wiring harness, and the OEM-style switch (it fits a blank switch slot in the dash).",
       "photo": "https://overlandkitted.com/cdn/shop/files/TacomaDitchLights.png",
       "sale": {
         "text": "On sale, regular $189.99",
@@ -268,12 +285,6 @@
       "size": "L/XL, black",
       "notes": "Often sold out",
       "photo": "https://res.garmin.com/en/products/010-04675-00/v/cf-lg.jpg"
-    },
-    {
-      "name": "Watch",
-      "category": "Style",
-      "deciding": true,
-      "notes": "Style details coming soon"
     },
     {
       "name": "Sneakers",
