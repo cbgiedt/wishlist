@@ -233,26 +233,10 @@
       "photo": "https://m.media-amazon.com/images/I/615zpHnvRyL.jpg"
     },
     {
-      "name": "Orient automatic watch, blue dial",
-      "category": "Style",
-      "price": "~$150–275",
-      "sort": 150,
-      "buy": [
-        {
-          "label": "eBay",
-          "url": "https://www.ebay.com/sch/i.html?_nkw=orient+automatic+blue+dial"
-        }
-      ],
-      "used": {
-        "text": "Used is fine"
-      },
-      "notes": "Or a similar style watch"
-    },
-    {
       "name": "Ditch light kit for 2016–2023 Tacoma",
       "category": "Truck",
-      "price": "$150–190",
-      "sort": 150.5,
+      "price": "$161.49",
+      "sort": 161.49,
       "buy": [
         {
           "label": "Overland Kitted",
@@ -262,8 +246,12 @@
       "used": {
         "text": "Used is fine"
       },
-      "notes": "Brackets, two LED pods and wiring",
-      "photo": "https://overlandkitted.com/cdn/shop/files/TacomaDitchLights.png"
+      "notes": "Get the version with 2 LED pods and the wiring harness. Spot-beam pods work too.",
+      "photo": "https://overlandkitted.com/cdn/shop/files/TacomaDitchLights.png",
+      "sale": {
+        "text": "On sale, regular $189.99",
+        "until": "2026-11-30"
+      }
     },
     {
       "name": "Garmin CIRQA smart band",
@@ -282,21 +270,10 @@
       "photo": "https://res.garmin.com/en/products/010-04675-00/v/cf-lg.jpg"
     },
     {
-      "name": "Seiko SNE039 solar watch",
+      "name": "Watch",
       "category": "Style",
-      "price": "~$295+ used",
-      "sort": 295,
-      "buy": [
-        {
-          "label": "eBay",
-          "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sne039"
-        }
-      ],
-      "used": {
-        "text": "Used is fine"
-      },
-      "notes": "Solar, day-date, black dial, stainless steel. Or a similar style watch.",
-      "photo": "https://i.ebayimg.com/images/g/WccAAeSwC9xq~1is/s-l500.webp"
+      "deciding": true,
+      "notes": "Style details coming soon"
     },
     {
       "name": "Sneakers",
