@@ -40,6 +40,9 @@
   .meta span { display: block; }
   .links { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; font-size: 14px; }
   a { color: var(--accent); }
+  .badge { display: inline-block; background: var(--sale); color: var(--bg); font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
+  .item.deal img { outline: 2px solid var(--sale); outline-offset: -2px; }
+  .dealnote { color: var(--sale); font-weight: 600; margin: -8px 0 20px; }
   .deciding { margin-top: 56px; border-top: 1px solid var(--line); padding-top: 20px; }
   .deciding h3 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
   .deciding ul { margin: 0; padding-left: 18px; color: var(--muted); }
@@ -56,12 +59,14 @@
     <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
     <label>Sort
       <select id="sort">
+        <option value="deals">Deals first</option>
         <option value="low">Price: low to high</option>
         <option value="high">Price: high to low</option>
       </select>
     </label>
   </div>
 
+  <p class="dealnote" id="dealnote" hidden></p>
   <div class="grid" id="grid"></div>
   <div class="deciding" id="deciding" hidden>
     <h3>Still deciding</h3>
@@ -100,10 +105,16 @@
     return new Date() <= new Date(s.until + "T23:59:59");
   }
 
+  const isDeal = (i) => !!(i.sale && i.sale.deal && saleActive(i.sale));
+  const shortDate = (s) => new Date(s + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
+
   function render() {
     const ready = items.filter(i => !i.deciding && (category === "All" || i.category === category));
-    const dir = $("sort").value === "high" ? -1 : 1;
-    ready.sort((a, b) => dir * ((a.sort ?? 0) - (b.sort ?? 0)));
+    const mode = $("sort").value, dir = mode === "high" ? -1 : 1;
+    ready.sort((a, b) => (mode === "deals" ? isDeal(b) - isDeal(a) : 0) || dir * ((a.sort ?? 0) - (b.sort ?? 0)));
+    const deals = items.filter(i => !i.deciding && isDeal(i));
+    $("dealnote").hidden = !deals.length;
+    $("dealnote").textContent = deals.length + (deals.length === 1 ? " item is" : " items are") + " on a Black Friday deal right now. These prices won't last.";
 
     const grid = $("grid");
     grid.replaceChildren();
@@ -116,6 +127,10 @@
         img.src = i.photo; img.alt = i.name; img.loading = "lazy";
         img.onerror = () => img.remove();
         card.append(img);
+      }
+      if (isDeal(i)) {
+        card.classList.add("deal");
+        card.append(el("span", "badge", "Black Friday deal" + (i.sale.until ? " · ends " + shortDate(i.sale.until) : "")));
       }
       card.append(el("h2", null, i.name));
       if (i.price) card.append(el("p", "price", i.price));

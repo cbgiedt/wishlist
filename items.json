@@ -163,7 +163,8 @@
       },
       "sale": {
         "text": "Black Friday price on Amazon (list $85)",
-        "until": "2026-11-30"
+        "until": "2026-11-30",
+        "deal": true
       },
       "notes": "Plain edge, not serrated",
       "photo": "https://m.media-amazon.com/images/I/51RwmFLGe8L._AC_SL1200_.jpg"
@@ -267,7 +268,8 @@
       "photo": "https://overlandkitted.com/cdn/shop/files/TacomaDitchLights.png",
       "sale": {
         "text": "On sale, regular $189.99",
-        "until": "2026-11-30"
+        "until": "2026-11-30",
+        "deal": true
       }
     },
     {
