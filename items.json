@@ -38,7 +38,7 @@
     {
       "name": "Duracell 5000L Tri-Powered Lantern",
       "category": "Camping",
-      "price": "$23.99 at Costco",
+      "price": "$23.99 in the warehouse (regular $34.99)",
       "sort": 23.99,
       "buy": [
         {
@@ -48,10 +48,12 @@
       ],
       "inPerson": "Costco",
       "sale": {
-        "text": "Already a good price at Costco",
-        "until": "2026-11-30"
+        "text": "In-warehouse deal. Costco does not post an end date.",
+        "until": "2026-11-30",
+        "deal": true,
+        "hideEnd": true
       },
-      "notes": "Solar + USB-C rechargeable, D-battery backup",
+      "notes": "Solar + USB-C rechargeable, D-battery backup. Online it is $34.99 and often out of stock, so buy it in the warehouse.",
       "photo": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:91596126-ddd7-46f8-91b5-885aa10ab54a/as/4000432481-847__1.avif"
     },
     {
@@ -218,13 +220,42 @@
       "photo": "photos/image.png"
     },
     {
-      "name": "Automatic watch (Seiko, Orient or similar)",
+      "name": "Seiko 5 SNKL23 (black dial)",
       "category": "Style",
-      "sort": 150,
+      "price": "About $175–260",
+      "sort": 200,
+      "pick": "watch",
+      "groupTitle": "Automatic watch",
+      "buy": [
+        {
+          "label": "eBay (new)",
+          "url": "https://www.ebay.com/itm/287567857925"
+        }
+      ],
       "used": {
         "text": "Used is fine"
       },
-      "notes": "Brands: Seiko, Orient or similar. Automatic (not solar, not digital). Minimal silver stainless case, black dial (blue is OK), day or date window. Steel bracelet, leather is OK. Nothing flashy."
+      "notes": "Automatic, 38mm, steel bracelet, day and date. Discontinued, so eBay is the easiest place to find one.",
+      "photo": "https://i.ebayimg.com/images/g/RxAAAeSwjU9qnG3V/s-l500.webp"
+    },
+    {
+      "name": "Orient Tristar (black dial)",
+      "category": "Style",
+      "price": "About $100–200",
+      "sort": 150,
+      "pick": "watch",
+      "groupTitle": "Automatic watch",
+      "buy": [
+        {
+          "label": "eBay",
+          "url": "https://www.ebay.com/itm/377602028988"
+        }
+      ],
+      "used": {
+        "text": "Used is fine"
+      },
+      "notes": "Automatic, steel bracelet, day and date. In the US it is mostly sold used or on eBay.",
+      "photo": "https://i.ebayimg.com/images/g/PfIAAeSwdzJq4RT3/s-l500.jpg"
     },
     {
       "name": "Levi's 568 Loose Straight jeans, \"Until Its Dust\" dark wash",
@@ -253,7 +284,7 @@
       "category": "Clothes",
       "price": "$49.90 each",
       "sort": 49.9,
-      "size": "L (listed in women's sizes; L has the 30\" inseam)",
+      "size": "M (listed in women's sizes, about a men's S)",
       "buy": [
         {
           "label": "Uniqlo",

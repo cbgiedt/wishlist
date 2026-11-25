@@ -43,6 +43,18 @@
   .badge { display: inline-block; background: var(--sale); color: var(--bg); font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
   .item.deal img { outline: 2px solid var(--sale); outline-offset: -2px; }
   .badge.bundle { background: none; color: var(--text); border: 1px solid var(--text); padding: 1px 7px; }
+  .stack { min-width: 0; }
+  .stack-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+  .stack-head .badge { margin: 0; }
+  .stack-ctrl { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+  .stack-ctrl button { width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 50%; background: var(--bg); color: var(--text); font: inherit; font-size: 16px; line-height: 1; cursor: pointer; }
+  .stack-title { font-size: 16px; font-weight: 600; margin: 0; }
+  .stack-sub { color: var(--muted); font-size: 13px; margin: 0 0 10px; }
+  .stack-frame { position: relative; padding: 0 10px 10px 0; }
+  .stack-frame::before { content: ""; position: absolute; top: 10px; left: 10px; right: 0; bottom: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+  .stack-track { position: relative; display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+  .stack-track::-webkit-scrollbar { display: none; }
+  .stack-card { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; padding: 12px; }
   .dealnote { color: var(--sale); font-weight: 600; margin: -8px 0 20px; }
   .deciding { margin-top: 56px; border-top: 1px solid var(--line); padding-top: 20px; }
   .deciding h3 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
@@ -109,12 +121,74 @@
   const isDeal = (i) => !!(i.sale && i.sale.deal && saleActive(i.sale));
   const shortDate = (s) => new Date(s + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
 
+  const groupOf = (i) => i.bundle ? { key: "b:" + i.bundle, type: "bundle" } : i.pick ? { key: "p:" + i.pick, type: "pick" } : null;
+  const members = (i) => { const g = groupOf(i); return g ? items.filter(x => !x.deciding && groupOf(x) && groupOf(x).key === g.key) : [i]; };
+  const money = (n) => "$" + n.toFixed(2);
+
+  function cardFor(i) {
+    const card = el("article", "item");
+    if (i.photo) {
+      const img = el("img");
+      img.src = i.photo; img.alt = i.name; img.loading = "lazy";
+      img.onerror = () => img.remove();
+      card.append(img);
+    }
+    if (isDeal(i)) {
+      card.classList.add("deal");
+      card.append(el("span", "badge", "Black Friday deal" + (i.sale.until && !i.sale.hideEnd ? " · ends " + shortDate(i.sale.until) : "")));
+    }
+    card.append(el("h2", null, i.name));
+    if (i.price) card.append(el("p", "price", i.price));
+    if (saleActive(i.sale)) card.append(el("p", "sale", i.sale.text));
+    const meta = el("div", "meta");
+    if (i.size) meta.append(el("span", null, "Size: " + i.size));
+    if (i.notes) meta.append(el("span", null, i.notes));
+    if (i.ideas) meta.append(el("span", null, "Also welcome: " + i.ideas));
+    if (i.inPerson) meta.append(el("span", null, "In store: " + i.inPerson));
+    if (meta.childNodes.length) card.append(meta);
+    const links = el("div", "links");
+    for (const b of i.buy || []) links.append(link(b.label, b.url));
+    if (i.used && i.used.url) links.append(link("Used", i.used.url));
+    if (links.childNodes.length) card.append(links);
+    if (i.used && i.used.text) card.append(el("p", "meta", i.used.text));
+    return card;
+  }
+
+  function stackFor(list, type, title) {
+    const wrap = el("article", "stack");
+    const head = el("div", "stack-head");
+    head.append(el("span", "badge bundle", type === "bundle" ? "Bundle · get both" : "Pick any one"));
+    const ctrl = el("div", "stack-ctrl");
+    const prev = el("button", null, "‹"), next = el("button", null, "›");
+    const count = el("span", null, "1 of " + list.length);
+    prev.type = "button"; next.type = "button";
+    prev.setAttribute("aria-label", "Previous"); next.setAttribute("aria-label", "Next");
+    ctrl.append(prev, count, next);
+    head.append(ctrl);
+    wrap.append(head);
+    if (title) wrap.append(el("h2", "stack-title", title));
+    wrap.append(el("p", "stack-sub", type === "bundle"
+      ? "Only wanted as a set. Together: " + money(list.reduce((s, m) => s + (m.sort || 0), 0))
+      : "Any one of these, or something very similar."));
+    const frame = el("div", "stack-frame");
+    const track = el("div", "stack-track");
+    list.forEach(m => { const c = cardFor(m); c.classList.add("stack-card"); track.append(c); });
+    frame.append(track);
+    wrap.append(frame);
+    const at = () => Math.round(track.scrollLeft / track.clientWidth);
+    const go = (n) => { const k = (at() + n + list.length) % list.length; track.scrollTo({ left: k * track.clientWidth, behavior: "smooth" }); };
+    prev.onclick = () => go(-1); next.onclick = () => go(1);
+    track.addEventListener("scroll", () => { count.textContent = (at() + 1) + " of " + list.length; }, { passive: true });
+    return wrap;
+  }
+
   function render() {
     const ready = items.filter(i => !i.deciding && (category === "All" || i.category === category));
     const mode = $("sort").value, dir = mode === "high" ? -1 : 1;
-    const groupDeal = (i) => i.bundle ? items.some(x => x.bundle === i.bundle && isDeal(x)) : isDeal(i);
-    const groupSort = (i) => i.bundle ? Math.min(...items.filter(x => x.bundle === i.bundle).map(x => x.sort ?? 0)) : (i.sort ?? 0);
-    ready.sort((a, b) => (mode === "deals" ? groupDeal(b) - groupDeal(a) : 0) || dir * (groupSort(a) - groupSort(b)) || String(a.bundle || "").localeCompare(String(b.bundle || "")) || (a.sort ?? 0) - (b.sort ?? 0));
+    const gDeal = (i) => members(i).some(isDeal);
+    const gSort = (i) => Math.min(...members(i).map(x => x.sort ?? 0));
+    const gKey = (i) => (groupOf(i) || { key: "" }).key;
+    ready.sort((a, b) => (mode === "deals" ? gDeal(b) - gDeal(a) : 0) || dir * (gSort(a) - gSort(b)) || gKey(a).localeCompare(gKey(b)) || (a.sort ?? 0) - (b.sort ?? 0));
     const deals = items.filter(i => !i.deciding && isDeal(i));
     $("dealnote").hidden = !deals.length;
     $("dealnote").textContent = deals.length + (deals.length === 1 ? " item is" : " items are") + " on a Black Friday deal right now. These prices won't last.";
@@ -122,39 +196,15 @@
     const grid = $("grid");
     grid.replaceChildren();
     if (!ready.length) grid.append(el("p", "empty", "Nothing here right now."));
-
+    const done = new Set();
     for (const i of ready) {
-      const card = el("article", "item");
-      if (i.photo) {
-        const img = el("img");
-        img.src = i.photo; img.alt = i.name; img.loading = "lazy";
-        img.onerror = () => img.remove();
-        card.append(img);
-      }
-      if (isDeal(i)) {
-        card.classList.add("deal");
-        card.append(el("span", "badge", "Black Friday deal" + (i.sale.until && !i.sale.hideEnd ? " · ends " + shortDate(i.sale.until) : "")));
-      }
-      if (i.bundle) card.append(el("span", "badge bundle", "Bundle · only wanted together"));
-      card.append(el("h2", null, i.name));
-      if (i.price) card.append(el("p", "price", i.price));
-      if (saleActive(i.sale)) card.append(el("p", "sale", i.sale.text));
-
-      const meta = el("div", "meta");
-      if (i.bundle) meta.append(el("span", null, "Buy together with: " + items.filter(x => x.bundle === i.bundle && x !== i).map(x => x.name).join(", ")));
-      if (i.size) meta.append(el("span", null, "Size: " + i.size));
-      if (i.notes) meta.append(el("span", null, i.notes));
-      if (i.ideas) meta.append(el("span", null, "Also welcome: " + i.ideas));
-      if (i.inPerson) meta.append(el("span", null, "In store: " + i.inPerson));
-      if (meta.childNodes.length) card.append(meta);
-
-      const links = el("div", "links");
-      for (const b of i.buy || []) links.append(link(b.label, b.url));
-      if (i.used && i.used.url) links.append(link("Used", i.used.url));
-      if (links.childNodes.length) card.append(links);
-      if (i.used && i.used.text) card.append(el("p", "meta", i.used.text));
-
-      grid.append(card);
+      const g = groupOf(i);
+      if (!g) { grid.append(cardFor(i)); continue; }
+      if (done.has(g.key)) continue;
+      done.add(g.key);
+      const list = ready.filter(x => gKey(x) === g.key);
+      const title = (list.find(x => x.groupTitle) || {}).groupTitle;
+      grid.append(list.length > 1 ? stackFor(list, g.type, title) : cardFor(list[0]));
     }
 
     const deciding = items.filter(i => i.deciding && (category === "All" || i.category === category));
