@@ -183,7 +183,8 @@
       "inPerson": "REI",
       "size": "L/XL",
       "notes": "Band only, goes with the CIRQA tracker",
-      "photo": "https://res.garmin.com/en/products/010-14472-20/v/cf-lg.jpg"
+      "photo": "https://res.garmin.com/en/products/010-14472-20/v/cf-lg.jpg",
+      "bundle": "cirqa"
     },
     {
       "name": "Teton Sports Celsius XXL 0°F sleeping bag",
@@ -219,19 +220,127 @@
     {
       "name": "Automatic watch (Seiko, Orient or similar)",
       "category": "Style",
-      "price": "Ideally under $150, up to $250",
       "sort": 150,
-      "buy": [
-        {
-          "label": "Amazon (example: Seiko 5 SNXS77)",
-          "url": "https://www.amazon.com/dp/B000KKO85S"
-        }
-      ],
       "used": {
         "text": "Used is fine"
       },
-      "notes": "Minimal and stainless steel. Black dial (blue is OK) with the day or date. Steel bracelet, leather is OK. Not digital, not solar. Other good fits: Orient Tristar, Seiko 5 SNK809.",
-      "photo": "https://m.media-amazon.com/images/I/51u+3YfRwtL._AC_SL1080_.jpg"
+      "notes": "Brands: Seiko, Orient or similar. Automatic (not solar, not digital). Minimal silver stainless case, black dial (blue is OK), day or date window. Steel bracelet, leather is OK. Nothing flashy."
+    },
+    {
+      "name": "Levi's 568 Loose Straight jeans, \"Until Its Dust\" dark wash",
+      "category": "Clothes",
+      "price": "$65.98, about $39.59 after the extra 40% off at checkout",
+      "sort": 39.59,
+      "size": "32 x 30 (tried on, fits)",
+      "buy": [
+        {
+          "label": "Levi's",
+          "url": "https://www.levi.com/US/en_US/clothing/men/jeans/loose/568-loose-straight-mens-jeans/p/290370147"
+        }
+      ],
+      "inPerson": "Levi's store in Tempe",
+      "sale": {
+        "text": "Black Friday: was $110. Final sale, no returns.",
+        "until": "2026-11-30",
+        "deal": true,
+        "hideEnd": true
+      },
+      "notes": "A lighter wash is welcome too. Darker, neutral, earthy colors are my thing.",
+      "photo": "https://lscoglobal.scene7.com/is/image/lscoglobal/MB_29037-0147_GLO_CM_DA"
+    },
+    {
+      "name": "Uniqlo Straight Sweatpants (open hem)",
+      "category": "Clothes",
+      "price": "$49.90 each",
+      "sort": 49.9,
+      "size": "L (listed in women's sizes; L has the 30\" inseam)",
+      "buy": [
+        {
+          "label": "Uniqlo",
+          "url": "https://www.uniqlo.com/us/en/products/E483285-000/00"
+        }
+      ],
+      "inPerson": "Uniqlo",
+      "notes": "One pair each: gray, black, dark brown. Get this open-hem version, not the men's sweatpants with the ankle cuff.",
+      "photo": "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/483285/item/usgoods_39_483285_3x4.jpg"
+    },
+    {
+      "name": "Uniqlo Souffle Yarn Half-Zip Sweater",
+      "category": "Clothes",
+      "price": "$49.90",
+      "sort": 49.9,
+      "size": "M, 39 Dark Brown",
+      "buy": [
+        {
+          "label": "Uniqlo",
+          "url": "https://www.uniqlo.com/us/en/products/E486078-000/00?colorDisplayCode=39"
+        }
+      ],
+      "inPerson": "Uniqlo",
+      "sale": {
+        "text": "Marked sale at Uniqlo",
+        "until": "2026-11-30",
+        "deal": true,
+        "hideEnd": true
+      },
+      "photo": "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/486078/item/usgoods_39_486078_3x4.jpg"
+    },
+    {
+      "name": "Uniqlo Souffle Yarn Polo Sweater",
+      "category": "Clothes",
+      "price": "$39.90",
+      "sort": 39.9,
+      "size": "M, 38 Dark Brown",
+      "buy": [
+        {
+          "label": "Uniqlo",
+          "url": "https://www.uniqlo.com/us/en/products/E487939-000/00?colorDisplayCode=38"
+        }
+      ],
+      "inPerson": "Uniqlo",
+      "sale": {
+        "text": "Limited-time price through 11/26",
+        "until": "2026-11-26",
+        "deal": true
+      },
+      "photo": "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/487939/item/usgoods_38_487939_3x4.jpg"
+    },
+    {
+      "name": "Uniqlo Supima Cotton T-Shirt",
+      "category": "Clothes",
+      "price": "$19.90 each",
+      "sort": 19.9,
+      "size": "M",
+      "buy": [
+        {
+          "label": "Uniqlo",
+          "url": "https://www.uniqlo.com/us/en/products/E455365-000/00"
+        }
+      ],
+      "inPerson": "Uniqlo",
+      "sale": {
+        "text": "Limited-time price through 11/26 (was $24.90)",
+        "until": "2026-11-26",
+        "deal": true
+      },
+      "notes": "One each: 09 Black, 00 White, 17 Red, 58 Dark Green, 66 Blue.",
+      "photo": "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/455365/item/usgoods_09_455365_3x4.jpg"
+    },
+    {
+      "name": "Uniqlo Pleated Relaxed Wide Pants",
+      "category": "Clothes",
+      "price": "$59.90 each",
+      "sort": 59.9,
+      "size": "M, Regular length, with the free inseam alteration set to 30\"",
+      "buy": [
+        {
+          "label": "Uniqlo",
+          "url": "https://www.uniqlo.com/us/en/products/E487220-000/00"
+        }
+      ],
+      "inPerson": "Uniqlo",
+      "notes": "One each: 09 Black, 08 Dark Gray, 38 Dark Brown. The 30\" inseam matters. The alteration shows as $0.00, and altered pants take about a week to ship.",
+      "photo": "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/487220/item/usgoods_38_487220_3x4.jpg"
     },
     {
       "name": "Kicker 6x9 front door speaker kit",
@@ -247,8 +356,41 @@
       "used": {
         "text": "Used is fine, any good 6x9 pair"
       },
-      "notes": "For a 2017 Tacoma. Includes adapters and harnesses.",
+      "notes": "For a 2017 Tacoma. The kit includes adapters and harnesses. Pairs with the amp below (these handle its power), but fine on their own too.",
       "photo": "https://m.media-amazon.com/images/I/615zpHnvRyL.jpg"
+    },
+    {
+      "name": "Kicker CXA360.4 4-channel amp",
+      "category": "Truck",
+      "price": "$229.99",
+      "sort": 229.99,
+      "bundle": "amp",
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B07ZTB7WRG"
+        }
+      ],
+      "used": {
+        "text": "Used is fine. Check eBay or Facebook Marketplace."
+      },
+      "notes": "Powers all 4 speakers. Takes the signal straight from the stereo's speaker wires, so no extra adapter is needed. A car audio shop installs it for about $100–200.",
+      "photo": "https://m.media-amazon.com/images/I/71zvgZ3YjLL._SL1500_.jpg"
+    },
+    {
+      "name": "Kicker CK8 8-gauge amp wiring kit",
+      "category": "Truck",
+      "price": "$79.99",
+      "sort": 79.99,
+      "bundle": "amp",
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B07NSD8H1T"
+        }
+      ],
+      "notes": "Power, ground, fuse and turn-on wire for the amp. Any good 8-gauge OFC (copper) kit works.",
+      "photo": "https://m.media-amazon.com/images/I/61t8SHYR1qL._AC_SL1000_.jpg"
     },
     {
       "name": "Ditch light kit for 2016–2023 Tacoma",
@@ -286,7 +428,8 @@
       "inPerson": "Best Buy or REI (check stock)",
       "size": "L/XL, black",
       "notes": "Often sold out",
-      "photo": "https://res.garmin.com/en/products/010-04675-00/v/cf-lg.jpg"
+      "photo": "https://res.garmin.com/en/products/010-04675-00/v/cf-lg.jpg",
+      "bundle": "cirqa"
     },
     {
       "name": "Sneakers",
