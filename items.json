@@ -4,18 +4,17 @@
     {
       "name": "Morakniv Companion fixed-blade knife",
       "category": "Camping",
-      "price": "$20–25",
-      "sort": 20,
+      "price": "$19.99",
+      "sort": 19.99,
       "buy": [
         {
           "label": "Amazon",
-          "url": "https://www.amazon.com/Morakniv-Companion-Outdoor-Stainless-4-1-Inch/dp/B00BTJKB00"
+          "url": "https://www.amazon.com/dp/B00BTJKB00"
         }
       ],
-      "inPerson": "REI or Bass Pro",
+      "inPerson": "REI, Bass Pro or Sportsman's Warehouse",
       "used": {
-        "text": "Used OK",
-        "url": "https://www.ebay.com/sch/i.html?_nkw=morakniv+companion"
+        "text": "Used is fine"
       },
       "notes": "Stainless, black",
       "photo": "https://m.media-amazon.com/images/I/717VDmkd8mL._AC_SL1500_.jpg"
@@ -23,18 +22,24 @@
     {
       "name": "GSI Cascadian 1 Person Table Set",
       "category": "Camping",
-      "price": "$19.99",
-      "sort": 19.99,
-      "photo": "https://m.media-amazon.com/images/I/61jIv3AMVhL._AC_SL1500_.jpg",
+      "price": "$19.95",
+      "sort": 19.95,
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B001LF3IC0"
+        }
+      ],
       "inPerson": "Sportsman's Warehouse",
-      "notes": "Plate, bowl and mug"
+      "notes": "Plate, bowl, mug and utensils. Any color.",
+      "ideas": "a second table set, or a small camp cooking pot",
+      "photo": "https://m.media-amazon.com/images/I/61jIv3AMVhL._AC_SL1500_.jpg"
     },
     {
       "name": "Duracell 5000L Tri-Powered Lantern",
       "category": "Camping",
       "price": "$23.99 at Costco",
       "sort": 23.99,
-      "photo": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:91596126-ddd7-46f8-91b5-885aa10ab54a/as/4000432481-847__1.avif",
       "buy": [
         {
           "label": "Costco",
@@ -46,51 +51,14 @@
         "text": "Already a good price at Costco",
         "until": "2026-11-30"
       },
-      "notes": "Solar + USB-C rechargeable, D-battery backup"
-    },
-    {
-      "name": "Coleman Classic 2-burner propane stove",
-      "category": "Camping",
-      "price": "$25–40 used",
-      "sort": 25,
-      "buy": [
-        {
-          "label": "Amazon (new)",
-          "url": "https://www.amazon.com/Coleman-2000020943NP-Classic-Propane-Stove/dp/B00005OU9D"
-        }
-      ],
-      "inPerson": "Bass Pro, Dick's, Walmart",
-      "used": {
-        "text": "Used preferred: any Coleman 2-burner propane stove",
-        "url": "https://www.ebay.com/sch/i.html?_nkw=coleman+classic+2+burner+propane+stove"
-      },
-      "notes": "Check that the burners light and the regulator isn't rusted. New is about $70–100.",
-      "photo": "https://m.media-amazon.com/images/I/81otNA0+kZL._AC_SL1500_.jpg"
-    },
-    {
-      "name": "Petzl CORE rechargeable battery",
-      "category": "Camping",
-      "price": "$30–40",
-      "sort": 30,
-      "buy": [
-        {
-          "label": "REI",
-          "url": "https://www.rei.com/product/109955/petzl-core-battery"
-        },
-        {
-          "label": "Amazon",
-          "url": "https://amazon.com/Petzl-E99ACA-CORE-Rechargeable-Battery/dp/B01NBGGH31"
-        }
-      ],
-      "inPerson": "REI",
-      "notes": "For my Petzl Tikka. Ask me first, I'm confirming it fits.",
-      "photo": "https://m.media-amazon.com/images/I/51eMFtD6qaL._AC_SL1002_.jpg"
+      "notes": "Solar + USB-C rechargeable, D-battery backup",
+      "photo": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:91596126-ddd7-46f8-91b5-885aa10ab54a/as/4000432481-847__1.avif"
     },
     {
       "name": "Homestock+ Professional first aid kit",
       "category": "Camping",
-      "price": "~$35",
-      "sort": 35,
+      "price": "$29.59",
+      "sort": 29.59,
       "buy": [
         {
           "label": "Amazon",
@@ -103,62 +71,102 @@
     {
       "name": "GSI Glacier Personal JavaPress",
       "category": "Camping",
-      "price": "$39.99",
-      "sort": 39.99,
-      "photo": "https://m.media-amazon.com/images/I/61L8-lOczDL._AC_SL1500_.jpg",
+      "price": "$29.99",
+      "sort": 29.99,
+      "buy": [
+        {
+          "label": "Sportsman's Warehouse",
+          "url": "https://www.sportsmans.com/outdoor-cooking-grills-supplies-accessories/cookware/kettles-coffee-presses/gsi-outdoors-glacier-personal-javapress/p/1857812"
+        }
+      ],
       "inPerson": "Sportsman's Warehouse",
-      "notes": "French press that also boils water on the stove"
+      "notes": "French press mug that also boils water on the stove",
+      "ideas": "ground coffee",
+      "photo": "https://www.sportsmans.com/medias/g-s-i-glacier-personal-javapress-1857812-1.jpg"
     },
     {
-      "name": "Spyderco Tenacious pocket knife",
+      "name": "Petzl CORE rechargeable battery",
       "category": "Camping",
-      "price": "~$40–50",
-      "sort": 40,
+      "price": "~$35",
+      "sort": 35,
+      "buy": [
+        {
+          "label": "REI",
+          "url": "https://www.rei.com/product/109955/petzl-core-battery"
+        }
+      ],
+      "inPerson": "REI",
+      "notes": "For my Petzl Tikka headlamp",
+      "photo": "https://m.media-amazon.com/images/I/51eMFtD6qaL._AC_SL1002_.jpg"
+    },
+    {
+      "name": "Coleman Classic 2-burner propane stove",
+      "category": "Camping",
+      "price": "$39.99",
+      "sort": 39.99,
       "buy": [
         {
           "label": "Amazon",
-          "url": "https://www.amazon.com/Spyderco-Tenacious-Lightweight-Folding-Stainless/dp/B083ZMLSWZ"
+          "url": "https://www.amazon.com/dp/B00005OU9D"
         }
       ],
-      "inPerson": "Bass Pro (check stock)",
+      "inPerson": "Bass Pro, Dick's or Walmart",
       "used": {
-        "text": "Used OK",
-        "url": "https://www.ebay.com/sch/i.html?_nkw=spyderco+tenacious"
+        "text": "Used is fine. Check that the burners light."
       },
-      "sale": {
-        "text": "Black Friday: all-black version $51.77 on Amazon (was $85)",
-        "until": "2026-11-30"
-      },
-      "notes": "Plain edge, not serrated",
-      "photo": "https://m.media-amazon.com/images/I/51RwmFLGe8L._AC_SL1200_.jpg"
+      "ideas": "1 lb propane cans",
+      "photo": "https://m.media-amazon.com/images/I/81otNA0+kZL._AC_SL1500_.jpg"
+    },
+    {
+      "name": "Bear spray",
+      "category": "Camping",
+      "price": "$40–60",
+      "sort": 40,
+      "buy": [
+        {
+          "label": "Amazon (SABRE)",
+          "url": "https://www.amazon.com/dp/B0CQMVHGK8"
+        }
+      ],
+      "inPerson": "REI, Bass Pro or Sportsman's Warehouse",
+      "notes": "Any EPA-registered brand. New only, it expires.",
+      "photo": "https://m.media-amazon.com/images/I/812WUKnpXLL._AC_SL1500_.jpg"
     },
     {
       "name": "H1 LED headlight bulbs (pair)",
       "category": "Truck",
-      "price": "$40–80",
-      "sort": 40,
+      "price": "$25–60",
+      "sort": 25,
       "buy": [
         {
-          "label": "Amazon search",
-          "url": "https://www.amazon.com/s?k=H1+LED+headlight+bulbs"
+          "label": "Amazon (example)",
+          "url": "https://www.amazon.com/dp/B0HB4P9K5D"
         }
       ],
-      "notes": "Ask me first, I'm confirming the bulb size"
+      "notes": "Any reputable brand of plug-and-play H1 LED bulbs",
+      "photo": "https://m.media-amazon.com/images/I/71Ne440Qv+L._AC_SL1500_.jpg"
     },
     {
-      "name": "Counter Assault bear spray, 10.2 oz",
+      "name": "Spyderco Tenacious pocket knife",
       "category": "Camping",
-      "price": "$45–55",
-      "sort": 45,
+      "price": "~$54",
+      "sort": 54,
       "buy": [
         {
-          "label": "REI",
-          "url": "https://www.rei.com/product/154929/counter-assault-bear-deterrent-spray-102-fl-oz"
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B083ZMLSWZ"
         }
       ],
-      "inPerson": "REI or Bass Pro",
-      "notes": "New only, it expires",
-      "photo": "https://m.media-amazon.com/images/I/61qgMe8yWWL._AC_SL1500_.jpg"
+      "inPerson": "Bass Pro (check stock)",
+      "used": {
+        "text": "Used is fine"
+      },
+      "sale": {
+        "text": "Black Friday price on Amazon (list $85)",
+        "until": "2026-11-30"
+      },
+      "notes": "Plain edge, not serrated",
+      "photo": "https://m.media-amazon.com/images/I/51RwmFLGe8L._AC_SL1200_.jpg"
     },
     {
       "name": "Garmin CIRQA upper arm band",
@@ -167,70 +175,84 @@
       "sort": 60,
       "buy": [
         {
-          "label": "REI",
-          "url": "https://www.rei.com/product/C16090/garmin-cirqa-accessory-upper-arm-band"
-        },
-        {
           "label": "Garmin",
           "url": "https://www.garmin.com/en-US/p/pn/010-14472-20"
         }
       ],
-      "size": "Ask me: S/M or L/XL",
+      "inPerson": "REI",
+      "size": "L/XL",
       "notes": "Band only, goes with the CIRQA tracker",
       "photo": "https://res.garmin.com/en/products/010-14472-20/v/cf-lg.jpg"
     },
     {
-      "name": "Kicker 6x9 front door speaker kit",
-      "category": "Truck",
-      "price": "$90–140",
-      "sort": 90,
-      "buy": [
-        {
-          "label": "Amazon",
-          "url": "https://www.amazon.com/clp/B0C3WTM7SY"
-        }
-      ],
-      "used": {
-        "text": "Used OK, any good 6x9 pair",
-        "url": "https://www.ebay.com/sch/i.html?_nkw=kicker+6x9"
-      },
-      "notes": "For a 2017 Tacoma. The kit includes adapters and harnesses.",
-      "photo": "https://m.media-amazon.com/images/I/615zpHnvRyL.jpg"
-    },
-    {
       "name": "Teton Sports Celsius XXL 0°F sleeping bag",
       "category": "Camping",
-      "price": "~$100",
-      "sort": 100,
+      "price": "$89.99",
+      "sort": 89.99,
       "buy": [
         {
           "label": "Amazon",
-          "url": "https://www.amazon.com/TETON-Sports-Celsius-Degree-Sleeping/dp/B0BY77362K"
+          "url": "https://www.amazon.com/dp/B001D6TB8W"
         }
       ],
       "used": {
-        "text": "Used OK",
-        "url": "https://www.ebay.com/sch/i.html?_nkw=teton+celsius+xxl+0"
+        "text": "Used is fine"
       },
       "sale": {
-        "text": "Was $59.99 in October, worth waiting for under $65",
+        "text": "Was $59.99 in October, worth grabbing under $65",
         "until": "2026-11-30"
       },
       "notes": "Any color, either zipper side",
-      "photo": "https://m.media-amazon.com/images/I/71+CobujBtL._AC_SL1500_.jpg"
+      "ideas": "a sleeping bag liner or camp pillow",
+      "photo": "https://m.media-amazon.com/images/I/61TFXt2pnxL._AC_SL1500_.jpg"
     },
     {
       "name": "Oakley sunglasses",
       "category": "Style",
       "price": "$109.99 at Costco",
       "sort": 109.99,
-      "inPerson": "Costco (item #1657763)"
+      "inPerson": "Costco (item #1657763)",
+      "notes": "Only sold in the warehouse",
+      "photo": "photos/image.png"
+    },
+    {
+      "name": "Kicker 6x9 front door speaker kit",
+      "category": "Truck",
+      "price": "$119.99",
+      "sort": 119.99,
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B0C3WTM7SY"
+        }
+      ],
+      "used": {
+        "text": "Used is fine, any good 6x9 pair"
+      },
+      "notes": "For a 2017 Tacoma. Includes adapters and harnesses.",
+      "photo": "https://m.media-amazon.com/images/I/615zpHnvRyL.jpg"
+    },
+    {
+      "name": "Orient automatic watch, blue dial",
+      "category": "Style",
+      "price": "~$150–275",
+      "sort": 150,
+      "buy": [
+        {
+          "label": "eBay",
+          "url": "https://www.ebay.com/sch/i.html?_nkw=orient+automatic+blue+dial"
+        }
+      ],
+      "used": {
+        "text": "Used is fine"
+      },
+      "notes": "Or a similar style watch"
     },
     {
       "name": "Ditch light kit for 2016–2023 Tacoma",
       "category": "Truck",
       "price": "$150–190",
-      "sort": 150,
+      "sort": 150.5,
       "buy": [
         {
           "label": "Overland Kitted",
@@ -238,8 +260,7 @@
         }
       ],
       "used": {
-        "text": "Used OK",
-        "url": "https://www.ebay.com/sch/i.html?_nkw=3rd+gen+tacoma+ditch+light+brackets"
+        "text": "Used is fine"
       },
       "notes": "Brackets, two LED pods and wiring",
       "photo": "https://overlandkitted.com/cdn/shop/files/TacomaDitchLights.png"
@@ -251,52 +272,31 @@
       "sort": 199.99,
       "buy": [
         {
-          "label": "Best Buy",
-          "url": "https://www.bestbuy.com/product/garmin-cirqa-smart-band-adjustable-black-s-m-black-2026/JXF9YV7768/sku/6687028"
+          "label": "Garmin",
+          "url": "https://www.garmin.com/en-US/p/1989182"
         }
       ],
-      "inPerson": "Best Buy (check stock)",
-      "size": "Ask me: S/M or L/XL, black",
+      "inPerson": "Best Buy or REI (check stock)",
+      "size": "L/XL, black",
       "notes": "Often sold out",
-      "photo": "https://m.media-amazon.com/images/I/71ByTmo8dML._AC_SL1500_.jpg"
+      "photo": "https://res.garmin.com/en/products/010-04675-00/v/cf-lg.jpg"
     },
     {
-      "name": "Kicker Hideaway HS10 powered subwoofer",
-      "category": "Truck",
-      "price": "$320–420",
-      "sort": 320,
+      "name": "Seiko SNE039 solar watch",
+      "category": "Style",
+      "price": "~$295+ used",
+      "sort": 295,
       "buy": [
         {
-          "label": "Amazon",
-          "url": "https://www.amazon.com/KICKER-46HS10-Compact-Powered-Subwoofer/dp/B083M9HR4D"
+          "label": "eBay",
+          "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sne039"
         }
       ],
       "used": {
-        "text": "Used OK, or a similar under-seat powered sub",
-        "url": "https://www.ebay.com/sch/i.html?_nkw=kicker+hideaway+hs10"
+        "text": "Used is fine"
       },
-      "sale": {
-        "text": "Crutchfield has up to 25% off select Kicker subs",
-        "until": "2026-11-30"
-      },
-      "notes": "Under-seat sub with built-in amp",
-      "photo": "https://m.media-amazon.com/images/I/91pvB3Kp+GL._AC_SL1500_.jpg"
-    },
-    {
-      "name": "Phone case",
-      "category": "Phone",
-      "deciding": true
-    },
-    {
-      "name": "Camp table",
-      "category": "Camping",
-      "deciding": true,
-      "notes": "Looking at Sportsman's Warehouse"
-    },
-    {
-      "name": "Watch (Seiko or similar)",
-      "category": "Style",
-      "deciding": true
+      "notes": "Solar, day-date, black dial, stainless steel. Or a similar style watch.",
+      "photo": "https://i.ebayimg.com/images/g/WccAAeSwC9xq~1is/s-l500.webp"
     },
     {
       "name": "Sneakers",

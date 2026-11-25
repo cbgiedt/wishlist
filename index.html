@@ -124,6 +124,7 @@
       const meta = el("div", "meta");
       if (i.size) meta.append(el("span", null, "Size: " + i.size));
       if (i.notes) meta.append(el("span", null, i.notes));
+      if (i.ideas) meta.append(el("span", null, "Also welcome: " + i.ideas));
       if (i.inPerson) meta.append(el("span", null, "In store: " + i.inPerson));
       if (meta.childNodes.length) card.append(meta);
 
