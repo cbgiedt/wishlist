@@ -6,17 +6,26 @@
       "category": "Camping",
       "price": "$20–25",
       "sort": 20,
-      "buy": [{ "label": "Amazon", "url": "https://www.amazon.com/Morakniv-Companion-Outdoor-Stainless-4-1-Inch/dp/B00BTJKB00" }],
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/Morakniv-Companion-Outdoor-Stainless-4-1-Inch/dp/B00BTJKB00"
+        }
+      ],
       "inPerson": "REI or Bass Pro",
-      "used": { "text": "Used OK", "url": "https://www.ebay.com/sch/i.html?_nkw=morakniv+companion" },
-      "notes": "Stainless, black"
+      "used": {
+        "text": "Used OK",
+        "url": "https://www.ebay.com/sch/i.html?_nkw=morakniv+companion"
+      },
+      "notes": "Stainless, black",
+      "photo": "https://m.media-amazon.com/images/I/717VDmkd8mL._AC_SL1500_.jpg"
     },
     {
       "name": "GSI Cascadian 1 Person Table Set",
       "category": "Camping",
       "price": "$19.99",
       "sort": 19.99,
-      "photo": "photos/gsi-table-set.jpg",
+      "photo": "https://m.media-amazon.com/images/I/61jIv3AMVhL._AC_SL1500_.jpg",
       "inPerson": "Sportsman's Warehouse",
       "notes": "Plate, bowl and mug"
     },
@@ -25,10 +34,18 @@
       "category": "Camping",
       "price": "$23.99 at Costco",
       "sort": 23.99,
-      "photo": "photos/duracell-lantern.jpg",
-      "buy": [{ "label": "Costco", "url": "https://www.costco.com/p/-/duracell-5000l-tri-powered-lantern/4000432481" }],
+      "photo": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:91596126-ddd7-46f8-91b5-885aa10ab54a/as/4000432481-847__1.avif",
+      "buy": [
+        {
+          "label": "Costco",
+          "url": "https://www.costco.com/p/-/duracell-5000l-tri-powered-lantern/4000432481"
+        }
+      ],
       "inPerson": "Costco",
-      "sale": { "text": "Already a good price at Costco", "until": "2026-11-30" },
+      "sale": {
+        "text": "Already a good price at Costco",
+        "until": "2026-11-30"
+      },
       "notes": "Solar + USB-C rechargeable, D-battery backup"
     },
     {
@@ -36,10 +53,19 @@
       "category": "Camping",
       "price": "$25–40 used",
       "sort": 25,
-      "buy": [{ "label": "Amazon (new)", "url": "https://www.amazon.com/Coleman-2000020943NP-Classic-Propane-Stove/dp/B00005OU9D" }],
+      "buy": [
+        {
+          "label": "Amazon (new)",
+          "url": "https://www.amazon.com/Coleman-2000020943NP-Classic-Propane-Stove/dp/B00005OU9D"
+        }
+      ],
       "inPerson": "Bass Pro, Dick's, Walmart",
-      "used": { "text": "Used preferred: any Coleman 2-burner propane stove", "url": "https://www.ebay.com/sch/i.html?_nkw=coleman+classic+2+burner+propane+stove" },
-      "notes": "Check that the burners light and the regulator isn't rusted. New is about $70–100."
+      "used": {
+        "text": "Used preferred: any Coleman 2-burner propane stove",
+        "url": "https://www.ebay.com/sch/i.html?_nkw=coleman+classic+2+burner+propane+stove"
+      },
+      "notes": "Check that the burners light and the regulator isn't rusted. New is about $70–100.",
+      "photo": "https://m.media-amazon.com/images/I/81otNA0+kZL._AC_SL1500_.jpg"
     },
     {
       "name": "Petzl CORE rechargeable battery",
@@ -47,46 +73,76 @@
       "price": "$30–40",
       "sort": 30,
       "buy": [
-        { "label": "REI", "url": "https://www.rei.com/product/109955/petzl-core-battery" },
-        { "label": "Amazon", "url": "https://amazon.com/Petzl-E99ACA-CORE-Rechargeable-Battery/dp/B01NBGGH31" }
+        {
+          "label": "REI",
+          "url": "https://www.rei.com/product/109955/petzl-core-battery"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://amazon.com/Petzl-E99ACA-CORE-Rechargeable-Battery/dp/B01NBGGH31"
+        }
       ],
       "inPerson": "REI",
-      "notes": "For my Petzl Tikka. Ask me first, I'm confirming it fits."
+      "notes": "For my Petzl Tikka. Ask me first, I'm confirming it fits.",
+      "photo": "https://m.media-amazon.com/images/I/51eMFtD6qaL._AC_SL1002_.jpg"
     },
     {
       "name": "Homestock+ Professional first aid kit",
       "category": "Camping",
       "price": "~$35",
       "sort": 35,
-      "buy": [{ "label": "Amazon", "url": "https://www.amazon.com/s?k=homestock%2B+professional+first+aid+kit" }],
-      "notes": "Lives in the truck"
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B0937P4ZWG"
+        }
+      ],
+      "notes": "Lives in the truck",
+      "photo": "https://m.media-amazon.com/images/I/71UTfXMuKnL._AC_SL1500_.jpg"
     },
     {
       "name": "GSI Glacier Personal JavaPress",
       "category": "Camping",
       "price": "$39.99",
       "sort": 39.99,
-      "photo": "photos/gsi-javapress.jpg",
+      "photo": "https://m.media-amazon.com/images/I/61L8-lOczDL._AC_SL1500_.jpg",
       "inPerson": "Sportsman's Warehouse",
       "notes": "French press that also boils water on the stove"
     },
     {
       "name": "Spyderco Tenacious pocket knife",
-      "category": "Everyday carry",
+      "category": "Camping",
       "price": "~$40–50",
       "sort": 40,
-      "buy": [{ "label": "Amazon", "url": "https://www.amazon.com/Spyderco-Tenacious-Lightweight-Folding-Stainless/dp/B083ZMLSWZ" }],
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/Spyderco-Tenacious-Lightweight-Folding-Stainless/dp/B083ZMLSWZ"
+        }
+      ],
       "inPerson": "Bass Pro (check stock)",
-      "used": { "text": "Used OK", "url": "https://www.ebay.com/sch/i.html?_nkw=spyderco+tenacious" },
-      "sale": { "text": "Black Friday: all-black version $51.77 on Amazon (was $85)", "until": "2026-11-30" },
-      "notes": "Plain edge, not serrated"
+      "used": {
+        "text": "Used OK",
+        "url": "https://www.ebay.com/sch/i.html?_nkw=spyderco+tenacious"
+      },
+      "sale": {
+        "text": "Black Friday: all-black version $51.77 on Amazon (was $85)",
+        "until": "2026-11-30"
+      },
+      "notes": "Plain edge, not serrated",
+      "photo": "https://m.media-amazon.com/images/I/51RwmFLGe8L._AC_SL1200_.jpg"
     },
     {
       "name": "H1 LED headlight bulbs (pair)",
       "category": "Truck",
       "price": "$40–80",
       "sort": 40,
-      "buy": [{ "label": "Amazon", "url": "https://www.amazon.com/SEALIGHT-Headlight-Ultra-thin-Headlights-Conversion/dp/B08CMN3NL2" }],
+      "buy": [
+        {
+          "label": "Amazon search",
+          "url": "https://www.amazon.com/s?k=H1+LED+headlight+bulbs"
+        }
+      ],
       "notes": "Ask me first, I'm confirming the bulb size"
     },
     {
@@ -94,79 +150,158 @@
       "category": "Camping",
       "price": "$45–55",
       "sort": 45,
-      "buy": [{ "label": "REI", "url": "https://www.rei.com/product/154929/counter-assault-bear-deterrent-spray-102-fl-oz" }],
+      "buy": [
+        {
+          "label": "REI",
+          "url": "https://www.rei.com/product/154929/counter-assault-bear-deterrent-spray-102-fl-oz"
+        }
+      ],
       "inPerson": "REI or Bass Pro",
-      "notes": "New only, it expires"
+      "notes": "New only, it expires",
+      "photo": "https://m.media-amazon.com/images/I/61qgMe8yWWL._AC_SL1500_.jpg"
     },
     {
       "name": "Garmin CIRQA upper arm band",
       "category": "Health",
       "price": "$60",
       "sort": 60,
-      "buy": [{ "label": "REI", "url": "https://www.rei.com/product/C16090/garmin-cirqa-accessory-upper-arm-band" }],
+      "buy": [
+        {
+          "label": "REI",
+          "url": "https://www.rei.com/product/C16090/garmin-cirqa-accessory-upper-arm-band"
+        },
+        {
+          "label": "Garmin",
+          "url": "https://www.garmin.com/en-US/p/pn/010-14472-20"
+        }
+      ],
       "size": "Ask me: S/M or L/XL",
-      "notes": "Band only, goes with the CIRQA tracker"
+      "notes": "Band only, goes with the CIRQA tracker",
+      "photo": "https://res.garmin.com/en/products/010-14472-20/v/cf-lg.jpg"
     },
     {
       "name": "Kicker 6x9 front door speaker kit",
       "category": "Truck",
       "price": "$90–140",
       "sort": 90,
-      "buy": [{ "label": "Amazon", "url": "https://www.amazon.com/clp/B0C3WTM7SY" }],
-      "used": { "text": "Used OK, any good 6x9 pair", "url": "https://www.ebay.com/sch/i.html?_nkw=kicker+6x9" },
-      "notes": "For a 2017 Tacoma. The kit includes adapters and harnesses."
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/clp/B0C3WTM7SY"
+        }
+      ],
+      "used": {
+        "text": "Used OK, any good 6x9 pair",
+        "url": "https://www.ebay.com/sch/i.html?_nkw=kicker+6x9"
+      },
+      "notes": "For a 2017 Tacoma. The kit includes adapters and harnesses.",
+      "photo": "https://m.media-amazon.com/images/I/615zpHnvRyL.jpg"
     },
     {
       "name": "Teton Sports Celsius XXL 0°F sleeping bag",
       "category": "Camping",
       "price": "~$100",
       "sort": 100,
-      "buy": [{ "label": "Amazon", "url": "https://www.amazon.com/TETON-Sports-Celsius-Degree-Sleeping/dp/B0BY77362K" }],
-      "used": { "text": "Used OK", "url": "https://www.ebay.com/sch/i.html?_nkw=teton+celsius+xxl+0" },
-      "sale": { "text": "Was $59.99 in October, worth waiting for under $65", "until": "2026-11-30" },
-      "notes": "Any color, either zipper side"
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/TETON-Sports-Celsius-Degree-Sleeping/dp/B0BY77362K"
+        }
+      ],
+      "used": {
+        "text": "Used OK",
+        "url": "https://www.ebay.com/sch/i.html?_nkw=teton+celsius+xxl+0"
+      },
+      "sale": {
+        "text": "Was $59.99 in October, worth waiting for under $65",
+        "until": "2026-11-30"
+      },
+      "notes": "Any color, either zipper side",
+      "photo": "https://m.media-amazon.com/images/I/71+CobujBtL._AC_SL1500_.jpg"
     },
     {
       "name": "Oakley sunglasses",
       "category": "Style",
       "price": "$109.99 at Costco",
       "sort": 109.99,
-      "photo": "photos/oakley.jpg",
-      "inPerson": "Costco (item #1657763)",
-      "notes": "The pair in the photo"
+      "inPerson": "Costco (item #1657763)"
     },
     {
       "name": "Ditch light kit for 2016–2023 Tacoma",
       "category": "Truck",
       "price": "$150–190",
       "sort": 150,
-      "buy": [{ "label": "Overland Kitted", "url": "https://overlandkitted.com/products/low-profile-ditch-light-brackets-kit-for-2016-2023-toyota-tacoma" }],
-      "used": { "text": "Used OK", "url": "https://www.ebay.com/sch/i.html?_nkw=3rd+gen+tacoma+ditch+light+brackets" },
-      "notes": "Brackets, two LED pods and wiring"
+      "buy": [
+        {
+          "label": "Overland Kitted",
+          "url": "https://overlandkitted.com/products/low-profile-ditch-light-brackets-kit-for-2016-2023-toyota-tacoma"
+        }
+      ],
+      "used": {
+        "text": "Used OK",
+        "url": "https://www.ebay.com/sch/i.html?_nkw=3rd+gen+tacoma+ditch+light+brackets"
+      },
+      "notes": "Brackets, two LED pods and wiring",
+      "photo": "https://overlandkitted.com/cdn/shop/files/TacomaDitchLights.png"
     },
     {
       "name": "Garmin CIRQA smart band",
       "category": "Health",
       "price": "$199.99",
       "sort": 199.99,
-      "buy": [{ "label": "Best Buy", "url": "https://www.bestbuy.com/product/garmin-cirqa-smart-band-adjustable-black-s-m-black-2026/JXF9YV7768/sku/6687028" }],
+      "buy": [
+        {
+          "label": "Best Buy",
+          "url": "https://www.bestbuy.com/product/garmin-cirqa-smart-band-adjustable-black-s-m-black-2026/JXF9YV7768/sku/6687028"
+        }
+      ],
       "inPerson": "Best Buy (check stock)",
       "size": "Ask me: S/M or L/XL, black",
-      "notes": "Often sold out"
+      "notes": "Often sold out",
+      "photo": "https://m.media-amazon.com/images/I/71ByTmo8dML._AC_SL1500_.jpg"
     },
     {
       "name": "Kicker Hideaway HS10 powered subwoofer",
       "category": "Truck",
       "price": "$320–420",
       "sort": 320,
-      "buy": [{ "label": "Amazon", "url": "https://www.amazon.com/KICKER-46HS10-Compact-Powered-Subwoofer/dp/B083M9HR4D" }],
-      "used": { "text": "Used OK, or a similar under-seat powered sub", "url": "https://www.ebay.com/sch/i.html?_nkw=kicker+hideaway+hs10" },
-      "sale": { "text": "Crutchfield has up to 25% off select Kicker subs", "until": "2026-11-30" },
-      "notes": "Under-seat sub with built-in amp"
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/KICKER-46HS10-Compact-Powered-Subwoofer/dp/B083M9HR4D"
+        }
+      ],
+      "used": {
+        "text": "Used OK, or a similar under-seat powered sub",
+        "url": "https://www.ebay.com/sch/i.html?_nkw=kicker+hideaway+hs10"
+      },
+      "sale": {
+        "text": "Crutchfield has up to 25% off select Kicker subs",
+        "until": "2026-11-30"
+      },
+      "notes": "Under-seat sub with built-in amp",
+      "photo": "https://m.media-amazon.com/images/I/91pvB3Kp+GL._AC_SL1500_.jpg"
     },
-    { "name": "Phone case", "category": "Phone", "deciding": true },
-    { "name": "Camp table", "category": "Camping", "deciding": true, "notes": "Looking at Sportsman's Warehouse" },
-    { "name": "Watch (Seiko or similar)", "category": "Style", "deciding": true },
-    { "name": "Sneakers", "category": "Style", "deciding": true }
+    {
+      "name": "Phone case",
+      "category": "Phone",
+      "deciding": true
+    },
+    {
+      "name": "Camp table",
+      "category": "Camping",
+      "deciding": true,
+      "notes": "Looking at Sportsman's Warehouse"
+    },
+    {
+      "name": "Watch (Seiko or similar)",
+      "category": "Style",
+      "deciding": true
+    },
+    {
+      "name": "Sneakers",
+      "category": "Style",
+      "deciding": true
+    }
   ]
 }
