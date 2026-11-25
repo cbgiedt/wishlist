@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "items": [
     {
       "name": "Morakniv Companion fixed-blade knife",
@@ -239,6 +239,25 @@
       "photo": "https://i.ebayimg.com/images/g/RxAAAeSwjU9qnG3V/s-l500.webp"
     },
     {
+      "name": "Citizen NH8350-59E (black dial)",
+      "category": "Style",
+      "price": "About $150–200",
+      "sort": 175,
+      "pick": "watch",
+      "groupTitle": "Automatic watch",
+      "buy": [
+        {
+          "label": "eBay (new)",
+          "url": "https://www.ebay.com/itm/287561206830"
+        }
+      ],
+      "used": {
+        "text": "Used is fine"
+      },
+      "notes": "Automatic, 40mm, steel bracelet, day and date.",
+      "photo": "https://i.ebayimg.com/images/g/NMYAAeSwsx9qmE9V/s-l500.webp"
+    },
+    {
       "name": "Orient Tristar (black dial)",
       "category": "Style",
       "price": "About $100–200",
@@ -374,21 +393,21 @@
       "photo": "https://image.uniqlo.com/UQ/ST3/us/imagesgoods/487220/item/usgoods_38_487220_3x4.jpg"
     },
     {
-      "name": "Kicker 6x9 front door speaker kit",
+      "name": "Kicker KS speaker kit, front and rear doors",
       "category": "Truck",
-      "price": "$119.99",
-      "sort": 119.99,
+      "price": "$319.98",
+      "sort": 319.98,
       "buy": [
         {
           "label": "Amazon",
-          "url": "https://www.amazon.com/dp/B0C3WTM7SY"
+          "url": "https://www.amazon.com/dp/B0D8C1MBW7"
         }
       ],
       "used": {
-        "text": "Used is fine, any good 6x9 pair"
+        "text": "Used is fine (any KS 6x9 + 6.5\" pairs)"
       },
-      "notes": "For a 2017 Tacoma. The kit includes adapters and harnesses. Rated 90 W each, a good match for the amp, and fine on their own too.",
-      "photo": "https://m.media-amazon.com/images/I/615zpHnvRyL.jpg"
+      "notes": "For a 2017 Tacoma Access Cab without JBL. Includes KS 6x9s for the front doors, KS 6.5\"s for the rear doors, plus the adapters and harnesses. Goes with the amp below.",
+      "photo": "https://m.media-amazon.com/images/I/71qxO5028vL._AC_SL1000_.jpg"
     },
     {
       "name": "Kicker CXA360.4 4-channel amp",
