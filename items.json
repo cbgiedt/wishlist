@@ -387,7 +387,7 @@
       "used": {
         "text": "Used is fine, any good 6x9 pair"
       },
-      "notes": "For a 2017 Tacoma. The kit includes adapters and harnesses. Pairs with the amp below (these handle its power), but fine on their own too.",
+      "notes": "For a 2017 Tacoma. The kit includes adapters and harnesses. Rated 90 W each, a good match for the amp, and fine on their own too.",
       "photo": "https://m.media-amazon.com/images/I/615zpHnvRyL.jpg"
     },
     {
@@ -405,23 +405,38 @@
       "used": {
         "text": "Used is fine. Check eBay or Facebook Marketplace."
       },
-      "notes": "Powers all 4 speakers. Takes the signal straight from the stereo's speaker wires, so no extra adapter is needed. A car audio shop installs it for about $100–200.",
+      "notes": "Powers all 4 speakers (65 W each). Takes the signal from the stereo's speaker wires, so no extra adapter is needed.",
       "photo": "https://m.media-amazon.com/images/I/71zvgZ3YjLL._SL1500_.jpg"
     },
     {
-      "name": "Kicker CK8 8-gauge amp wiring kit",
+      "name": "Kicker PK8 8-gauge amp power kit",
       "category": "Truck",
-      "price": "$79.99",
-      "sort": 79.99,
+      "price": "$59.99",
+      "sort": 59.99,
       "bundle": "amp",
       "buy": [
         {
           "label": "Amazon",
-          "url": "https://www.amazon.com/dp/B07NSD8H1T"
+          "url": "https://www.amazon.com/dp/B07NSDLP53"
         }
       ],
-      "notes": "Power, ground, fuse and turn-on wire for the amp. Any good 8-gauge OFC (copper) kit works.",
-      "photo": "https://m.media-amazon.com/images/I/61t8SHYR1qL._AC_SL1000_.jpg"
+      "notes": "Power wire, ground, turn-on wire and fuse for the amp. Any 8-gauge OFC (copper) power kit works.",
+      "photo": "https://m.media-amazon.com/images/I/61FzbIiMjGL._SL1000_.jpg"
+    },
+    {
+      "name": "16-gauge speaker wire, 100 ft",
+      "category": "Truck",
+      "price": "$36.95",
+      "sort": 36.95,
+      "bundle": "amp",
+      "buy": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B0CQ9XFGM6"
+        }
+      ],
+      "notes": "Connects the amp to the stereo and to the 4 speakers. Any 16-gauge OFC (copper) wire works.",
+      "photo": "https://m.media-amazon.com/images/I/71WraSrv79L._SL1500_.jpg"
     },
     {
       "name": "Ditch light kit for 2016–2023 Tacoma",
