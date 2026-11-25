@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wishlist</title>
+<style>
+  /* ---- Settings: change these to customize the look ---- */
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e6e6e6;
+    --accent: #1a1a1a;
+    --sale: #2f7d32;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --text: #ececec; --muted: #9a9a9a; --line: #2a2a2a; --accent: #ececec; --sale: #7bc47f; }
+  }
+  /* ------------------------------------------------------ */
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 var(--font); }
+  main { max-width: 980px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .intro { color: var(--muted); margin: 0 0 28px; max-width: 620px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; justify-content: space-between;
+         border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 24px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  .filters button { background: none; border: 0; padding: 4px 0; font: inherit; color: var(--muted); cursor: pointer; }
+  .filters button[aria-pressed="true"] { color: var(--text); text-decoration: underline; text-underline-offset: 5px; }
+  select { font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 36px 28px; }
+  .item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; background: var(--line); margin-bottom: 12px; }
+  .item h2 { font-size: 16px; font-weight: 600; margin: 0; }
+  .price { margin: 2px 0 0; }
+  .sale { color: var(--sale); font-size: 13px; margin: 4px 0 0; }
+  .meta { color: var(--muted); font-size: 13px; margin: 6px 0 0; }
+  .meta span { display: block; }
+  .links { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; font-size: 14px; }
+  a { color: var(--accent); }
+  .deciding { margin-top: 56px; border-top: 1px solid var(--line); padding-top: 20px; }
+  .deciding h3 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
+  .deciding ul { margin: 0; padding-left: 18px; color: var(--muted); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+  .empty { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title">Wishlist</h1>
+  <p class="intro" id="intro"></p>
+
+  <div class="bar">
+    <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+    <label>Sort
+      <select id="sort">
+        <option value="low">Price: low to high</option>
+        <option value="high">Price: high to low</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <div class="deciding" id="deciding" hidden>
+    <h3>Still deciding</h3>
+    <ul id="deciding-list"></ul>
+  </div>
+  <footer id="footer"></footer>
+</main>
+
+<script>
+  // ---- Settings: change these to customize the page ----
+  const SETTINGS = {
+    title: "Carter's wishlist",
+    intro: "Where it says \"used OK,\" a used one or a similar model is just as good. If something says \"ask me,\" text me first.",
+    showDeciding: true,   // show the "Still deciding" list at the bottom
+    showSales: true       // show sale notes (each one hides itself after its end date)
+  };
+  // -------------------------------------------------------
+
+  const $ = (id) => document.getElementById(id);
+  let items = [], category = "All";
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function link(label, url) {
+    const a = el("a", null, label);
+    if (/^https:\/\//.test(url)) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+    return a;
+  }
+  function saleActive(s) {
+    if (!s || !SETTINGS.showSales) return false;
+    if (!s.until) return true;
+    return new Date() <= new Date(s.until + "T23:59:59");
+  }
+
+  function render() {
+    const ready = items.filter(i => !i.deciding && (category === "All" || i.category === category));
+    const dir = $("sort").value === "high" ? -1 : 1;
+    ready.sort((a, b) => dir * ((a.sort ?? 0) - (b.sort ?? 0)));
+
+    const grid = $("grid");
+    grid.replaceChildren();
+    if (!ready.length) grid.append(el("p", "empty", "Nothing here right now."));
+
+    for (const i of ready) {
+      const card = el("article", "item");
+      if (i.photo) {
+        const img = el("img");
+        img.src = i.photo; img.alt = i.name; img.loading = "lazy";
+        img.onerror = () => img.remove();
+        card.append(img);
+      }
+      card.append(el("h2", null, i.name));
+      if (i.price) card.append(el("p", "price", i.price));
+      if (saleActive(i.sale)) card.append(el("p", "sale", i.sale.text));
+
+      const meta = el("div", "meta");
+      if (i.size) meta.append(el("span", null, "Size: " + i.size));
+      if (i.notes) meta.append(el("span", null, i.notes));
+      if (i.inPerson) meta.append(el("span", null, "In store: " + i.inPerson));
+      if (meta.childNodes.length) card.append(meta);
+
+      const links = el("div", "links");
+      for (const b of i.buy || []) links.append(link(b.label, b.url));
+      if (i.used && i.used.url) links.append(link("Used", i.used.url));
+      if (links.childNodes.length) card.append(links);
+      if (i.used && i.used.text) card.append(el("p", "meta", i.used.text));
+
+      grid.append(card);
+    }
+
+    const deciding = items.filter(i => i.deciding && (category === "All" || i.category === category));
+    $("deciding").hidden = !SETTINGS.showDeciding || !deciding.length;
+    $("deciding-list").replaceChildren(...deciding.map(i => el("li", null, i.name + (i.notes ? " — " + i.notes : ""))));
+  }
+
+  function buildFilters() {
+    const cats = ["All", ...new Set(items.map(i => i.category).filter(Boolean))];
+    $("filters").replaceChildren(...cats.map(c => {
+      const b = el("button", null, c);
+      b.type = "button";
+      b.setAttribute("aria-pressed", c === category);
+      b.onclick = () => { category = c; buildFilters(); render(); };
+      return b;
+    }));
+  }
+
+  $("title").textContent = SETTINGS.title;
+  document.title = SETTINGS.title;
+  $("intro").textContent = SETTINGS.intro;
+  $("sort").onchange = render;
+
+  fetch("items.json", { cache: "no-store" })
+    .then(r => r.json())
+    .then(data => {
+      items = data.items || [];
+      if (data.updated) $("footer").textContent = "Updated " + new Date(data.updated + "T12:00:00").toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" });
+      buildFilters();
+      render();
+    })
+    .catch(() => { $("grid").append(el("p", "empty", "Couldn't load the list. Try refreshing.")); });
+</script>
+</body>
+</html>
