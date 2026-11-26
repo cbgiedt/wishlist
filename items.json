@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "items": [
     {
       "name": "Morakniv Companion fixed-blade knife",
@@ -494,7 +494,11 @@
       "size": "L/XL, black",
       "notes": "Often sold out",
       "photo": "https://res.garmin.com/en/products/010-04675-00/v/cf-lg.jpg",
-      "bundle": "cirqa"
+      "bundle": "cirqa",
+      "used": {
+        "text": "Used option: $175 on Facebook Marketplace in Chandler, like new. Check that it is L/XL.",
+        "url": "https://www.facebook.com/marketplace/item/1466807942239604/"
+      }
     },
     {
       "name": "Sneakers",
